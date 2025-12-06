@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout Source') {
             steps {
-                git 'https://github.com/Alyssajin/node-app-cicd.git'
+                git branch: 'main', url: 'https://github.com/Alyssajin/node-app-cicd.git'
             }
         }
 
